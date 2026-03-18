@@ -1,0 +1,233 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400;700&display=swap');
+@import "tailwindcss";
+
+@custom-variant dark (&:is(.dark *));
+
+/* ================= ROOT ================= */
+:root {
+  --background: 0 0% 98%;
+  --foreground: 0 0% 7%;
+
+  --card: 0 0% 100%;
+  --card-foreground: 0 0% 7%;
+
+  --popover: 0 0% 100%;
+  --popover-foreground: 0 0% 7%;
+
+  --primary: 0 0% 7%;
+  --primary-foreground: 0 0% 98%;
+
+  --secondary: 30 20% 95%;
+  --secondary-foreground: 0 0% 7%;
+
+  --muted: 0 0% 92%;
+  --muted-foreground: 0 0% 45%;
+
+  --accent: 210 20% 15%;
+  --accent-foreground: 0 0% 98%;
+
+  --destructive: 0 84.2% 60.2%;
+  --destructive-foreground: 0 0% 98%;
+
+  --border: 0 0% 0%;
+  --input: 0 0% 88%;
+  --ring: 0 0% 7%;
+
+  --radius: 0px;
+
+  /* Sidebar */
+  --sidebar-background: 0 0% 98%;
+  --sidebar-foreground: 240 5.3% 26.1%;
+  --sidebar-primary: 240 5.9% 10%;
+  --sidebar-primary-foreground: 0 0% 98%;
+  --sidebar-accent: 240 4.8% 95.9%;
+  --sidebar-accent-foreground: 240 5.9% 10%;
+  --sidebar-border: 220 13% 91%;
+  --sidebar-ring: 217.2 91.2% 59.8%;
+
+  /* Custom Gradient Tokens */
+  --hero-gradient-1: 20 40% 8%;
+  --hero-gradient-2: 220 25% 25%;
+  --hero-gradient-3: 215 25% 55%;
+  --hero-gradient-4: 215 30% 72%;
+
+  --statement-gradient-1: 215 30% 82%;
+  --statement-gradient-2: 210 20% 90%;
+  --statement-gradient-3: 45 40% 92%;
+  --statement-gradient-4: 40 50% 90%;
+
+  --approach-gradient-1: 0 0% 98%;
+  --approach-gradient-2: 40 50% 92%;
+  --approach-gradient-3: 35 60% 78%;
+  --approach-gradient-4: 30 65% 70%;
+
+  --mint-bg: 140 30% 95%;
+}
+
+/* ================= DARK ================= */
+.dark {
+  --background: 0 0% 7%;
+  --foreground: 0 0% 98%;
+
+  --card: 0 0% 10%;
+  --card-foreground: 0 0% 98%;
+
+  --popover: 0 0% 10%;
+  --popover-foreground: 0 0% 98%;
+
+  --primary: 0 0% 98%;
+  --primary-foreground: 0 0% 7%;
+
+  --secondary: 0 0% 15%;
+  --secondary-foreground: 0 0% 98%;
+
+  --muted: 0 0% 15%;
+  --muted-foreground: 0 0% 65%;
+
+  --accent: 210 20% 80%;
+  --accent-foreground: 0 0% 7%;
+
+  --border: 0 0% 20%;
+  --input: 0 0% 20%;
+  --ring: 0 0% 83.9%;
+}
+
+/* ================= THEME ================= */
+@theme inline {
+  --color-background: hsl(var(--background));
+  --color-foreground: hsl(var(--foreground));
+
+  --color-card: hsl(var(--card));
+  --color-card-foreground: hsl(var(--card-foreground));
+
+  --color-popover: hsl(var(--popover));
+  --color-popover-foreground: hsl(var(--popover-foreground));
+
+  --color-primary: hsl(var(--primary));
+  --color-primary-foreground: hsl(var(--primary-foreground));
+
+  --color-secondary: hsl(var(--secondary));
+  --color-secondary-foreground: hsl(var(--secondary-foreground));
+
+  --color-muted: hsl(var(--muted));
+  --color-muted-foreground: hsl(var(--muted-foreground));
+
+  --color-accent: hsl(var(--accent));
+  --color-accent-foreground: hsl(var(--accent-foreground));
+
+  --color-border: hsl(var(--border));
+  --color-input: hsl(var(--input));
+  --color-ring: hsl(var(--ring));
+
+  --radius-lg: var(--radius);
+
+  --font-serif-display: "Source Serif 4", Georgia, serif;
+  --font-sans-body: "Inter", system-ui, sans-serif;
+}
+
+/* ================= BASE ================= */
+@layer base {
+  * {
+    @apply border-border/[0.08];
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    font-family: var(--font-sans-body);
+  }
+}
+
+/* ================= UTILITIES ================= */
+@layer utilities {
+  .font-serif-display {
+    font-family: var(--font-serif-display);
+  }
+
+  .font-sans-body {
+    font-family: var(--font-sans-body);
+  }
+
+  .text-display {
+    @apply font-serif-display font-semibold;
+    font-size: clamp(1.8rem, 5vw, 3.8rem);
+    line-height: 1.1;
+    letter-spacing: -0.02em;
+  }
+
+  .text-display-sm {
+    @apply font-serif-display font-semibold;
+    font-size: clamp(1.5rem, 4vw, 2.8rem);
+    line-height: 1.2;
+    letter-spacing: -0.01em;
+  }
+
+  .text-label {
+    @apply font-sans-body font-medium uppercase;
+    font-size: 13px;
+    letter-spacing: 0.12em;
+  }
+
+  .text-body {
+    @apply font-sans-body;
+    font-size: 17px;
+    line-height: 1.6;
+    max-width: 60ch;
+  }
+
+  .text-body-muted {
+    @apply font-sans-body text-muted-foreground;
+    font-size: 17px;
+    line-height: 1.6;
+    max-width: 60ch;
+  }
+
+  /* Gradients */
+  .hero-gradient {
+    background: linear-gradient(180deg,
+        hsl(var(--hero-gradient-1)) 0%,
+        hsl(var(--hero-gradient-2)) 40%,
+        hsl(var(--hero-gradient-3)) 70%,
+        hsl(var(--hero-gradient-4)) 100%);
+  }
+
+  .statement-gradient {
+    background: linear-gradient(180deg,
+        hsl(var(--statement-gradient-1)) 0%,
+        hsl(var(--statement-gradient-2)) 30%,
+        hsl(var(--statement-gradient-3)) 70%,
+        hsl(var(--statement-gradient-4)) 100%);
+  }
+
+  .approach-gradient {
+    background: linear-gradient(180deg,
+        hsl(var(--approach-gradient-1)) 0%,
+        hsl(var(--approach-gradient-2)) 30%,
+        hsl(var(--approach-gradient-3)) 70%,
+        hsl(var(--approach-gradient-4)) 100%);
+  }
+
+  .mint-section {
+    background: hsl(var(--mint-bg));
+  }
+
+  /* Buttons */
+  .pill-button {
+    @apply font-sans-body inline-flex items-center px-6 py-3 text-sm font-medium rounded-full transition-all duration-300;
+  }
+
+  .pill-button-light {
+    @apply font-sans-body inline-flex items-center px-6 py-3 text-sm font-medium rounded-full transition-all duration-300 bg-primary-foreground/20 text-primary-foreground backdrop-blur-sm;
+  }
+
+  .pill-button-dark {
+    @apply font-sans-body inline-flex items-center px-6 py-3 text-sm font-medium rounded-full transition-all duration-300 bg-foreground text-background;
+  }
+
+  .pill-button-outline {
+    @apply font-sans-body inline-flex items-center px-6 py-3 text-sm font-medium rounded-full transition-all duration-300 border border-foreground/20 text-foreground;
+  }
+
+  .tag {
+    @apply font-sans-body inline-flex items-center px-4 py-1.5 text-xs font-medium rounded-full border border-foreground/15 text-foreground;
+  }
+}
