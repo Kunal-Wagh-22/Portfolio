@@ -4,12 +4,13 @@ import type { SiteData } from "@/lib/content";
 import ScrollHighlightText from "./ScrollHighlightText";
 
 interface ApproachSectionProps {
+  id?: string;
   foregroundColor: string;
   mutedColor: string;
   data: SiteData["approach"];
 }
 
-const ApproachSection = ({ foregroundColor, mutedColor, data }: ApproachSectionProps) => {
+const ApproachSection = ({ id, foregroundColor, mutedColor, data }: ApproachSectionProps) => {
 
   const ref = useRef<HTMLDivElement>(null);
 
@@ -25,7 +26,7 @@ const ApproachSection = ({ foregroundColor, mutedColor, data }: ApproachSectionP
   const yButton = useTransform(scrollYProgress, [0, 1], [30, -30]);
 
   return (
-    <section ref={ref} id="about" className="relative py-[25vh] overflow-hidden">
+    <section ref={ref} id={id} className="relative py-[25vh] overflow-hidden">
       <div className="max-w-7xl mx-auto px-6 md:px-10">
         <motion.div
           style={{ y: yHeadline }}
