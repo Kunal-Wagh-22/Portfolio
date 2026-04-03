@@ -1,8 +1,7 @@
----
 hero:
   firstName: "Kunal"
   lastName: "Wagh"
-  role: "Business Information Systems — Data Analyst & Full-Stack Engineer"
+  role: "Business Information Systems — Data Analyst & Business Analyst"
   location: "Monash University / Melbourne"
   resumeUrl: "/Kunal Resume (1).pdf"
   status: "Currently @ Monash University / Melbourne"
@@ -17,28 +16,32 @@ hero:
 
 approach:
   headline: "Analytical by nature, builder by design."
-  body: "Currently pursuing my Master's at Monash University, I focus on bridging the gap between data-driven decision making and full-stack engineering. Whether it's detecting hateful memes with BERT or architecting secure storage systems, I build for impact."
+  body: "Currently pursuing my Master's at Monash University, I focus on bridging the gap between data-driven decision making and business problem solving. I build analytical solutions that translate data into actionable insights and real-world impact."
 
 projects:
   - title: "IPL Match Dynamics Dashboard"
-    description: "•	Analysed 278K+ deliveries & 1,100+ matches to identify trends in toss decisions, scoring phases, and venue performance. Built an interactive D3.js dashboard with dynamic filters enabling real-time exploratory analysis. Identified that the toss advantage is venue-dependent, enabling more effective strategic planning. Provided insights on phase-wise performance contributing to winning outcomes."
-    tags: ["D3.js", "Data Visualization", "Data Exploration", "Python"]
+    description: "Analysed 278K+ deliveries & 1,100+ matches to identify trends in toss decisions, scoring phases, and venue performance. Built an interactive D3.js dashboard with dynamic filters enabling real-time exploratory analysis. Identified venue-dependent toss advantages and generated phase-wise performance insights influencing match outcomes."
+    tags: ["D3.js", "Data Visualization", "Data Analysis", "Python"]
     image: "https://images.unsplash.com/photo-1558494949-ef010cbdcc51?auto=format&fit=crop&q=80&w=800"
+
   - title: "CypherLock: Secure File Storage"
-    description: "Built a secure backend with Spring Boot, implementing file encryption, conversion functionality, and Rock You-based password breach detection."
+    description: "Developed a secure backend using Spring Boot with file encryption, secure storage, and password breach detection based on the RockYou dataset, enhancing system security and reliability."
     tags: ["Java", "Spring Boot", "Security", "Encryption"]
     image: "https://images.unsplash.com/photo-1558494949-ef010cbdcc51?auto=format&fit=crop&q=80&w=800"
+
   - title: "Blockchain Movie Distribution"
-    description: "Decentralized platform on Ethereum using IPFS for secure media storage and Thirdweb for deployment. Features a mail OTP verification system."
-    tags: ["Ethereum", "React", "IPFS", "Thirdweb"]
+    description: "Built a decentralized movie distribution platform using Ethereum and IPFS, with Thirdweb deployment and OTP-based authentication for secure and transparent content access."
+    tags: ["Ethereum", "React", "IPFS", "Blockchain"]
     image: "https://images.unsplash.com/photo-1639762681485-074b7f938ba0?auto=format&fit=crop&q=80&w=800"
+
   - title: "Hateful Meme Detection"
-    description: "Leveraged Detectron2 for facial recognition and entity detection, combined with a BERT model and knowledge graphs for classification."
-    tags: ["Python", "BERT", "Detectron2", "Deep Learning"]
+    description: "Developed a deep learning pipeline combining Detectron2 and BERT with knowledge graphs to classify harmful content in memes, improving detection accuracy and contextual understanding."
+    tags: ["Python", "BERT", "Deep Learning", "Computer Vision"]
     image: "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&q=80&w=800"
+
   - title: "Auto-Landing RC Plane GUI"
-    description: "Engineered a Python-based GUI for RC plane telemetry and performance analysis, contributing to an OpenCV autonomous landing system."
-    tags: ["Python", "PyQt5", "OpenCV", "Electronics"]
+    description: "Engineered a Python-based GUI for real-time telemetry and performance monitoring of an RC plane, contributing to an OpenCV-powered autonomous landing system."
+    tags: ["Python", "PyQt5", "OpenCV", "IoT"]
     image: "https://images.unsplash.com/photo-1508614589041-895b88991e3e?auto=format&fit=crop&q=80&w=800"
 
 experience:
@@ -47,57 +50,63 @@ experience:
     duration: "Feb 2026 - Present"
     location: "Melbourne, VIC"
     description:
-      - "Mentored undergraduate and postgraduate students on IT concepts, academic challenges, and university systems, improving student engagement and learning outcomes.
-      - "Conducted one-on-one and group mentoring sessions to support problem-solving, assignments, and coursework challenges."
-      - "Provided guidance on digital tools and learning platforms to enhance student productivity and engagement."
-      - "Provided guidance on digital tools and learning platforms to enhance student productivity and engagement."
+      - "Mentored undergraduate and postgraduate students on IT concepts, academic challenges, and university systems, improving engagement and learning outcomes."
+      - "Conducted one-on-one and group mentoring sessions to support assignments, problem-solving, and coursework understanding."
+      - "Guided students on digital tools and platforms to enhance productivity and academic performance."
+
   - company: "NullClass"
     role: "Data Analyst"
     duration: "Nov 2024 – Jan 2025"
     location: "Remote"
     description:
-      - "Utilized Python (pandas, NumPy) to perform data cleaning, transformation, and preprocessing on large datasets to ensure data quality and consistency."
-      - "Developed interactive dashboards and visualizations in Tableau to identify key trends and insights."
-      - "Gained hands-on experience with data pipelines, ETL processes, and visual storytelling techniques."
+      - "Performed data cleaning, transformation, and preprocessing using Python (Pandas, NumPy) to ensure high-quality datasets."
+      - "Developed interactive dashboards in Tableau to uncover trends and support data-driven decisions."
+      - "Worked with ETL pipelines and improved storytelling through data visualisation."
+
   - company: "Team Vaayushastra"
     role: "GUI Team Member"
     duration: "June 2021 – May 2022"
     location: "Mumbai, India"
     description:
-      - "Developed the team website for Team Vaayushastra."
-      - "Engineered a user-friendly GUI for an RC plane utilizing PyQt5 in Python."
-      - "Developed advanced visualization tools to analyse and enhance plane performance."
-      - "Contributed to the creation of an autonomous control system, implementing OpenCV for automated landing."
+      - "Developed and maintained the team website."
+      - "Built a PyQt5-based GUI for RC plane telemetry and performance analysis."
+      - "Created visualization tools to analyse flight performance."
+      - "Contributed to autonomous landing system using OpenCV."
+
   - company: "Spark Foundation"
     role: "Web Development Intern"
     duration: "July 2022 – Aug 2022"
     location: "Remote"
     description:
-      - "Developed a banking system with PHP, implementing email OTP verification."
-      - "Utilized MySQL for robust and efficient database structuring."
+      - "Developed a banking web application using PHP with OTP-based authentication."
+      - "Designed and managed MySQL databases for efficient data storage."
+
   - company: "Oasis Infobyte"
     role: "Web Development & Design"
     duration: "Jan 2023 – Feb 2023"
     location: "Remote"
     description:
-      - "Crafted a user-friendly calculator and a task management to-do list using EJS."
+      - "Built a calculator and task management application using EJS."
+
   - company: "CodeClause"
     role: "Web Development & Design"
     duration: "March 2023 – April 2023"
     location: "Remote"
     description:
-      - "Developed visually appealing React JS applications including timers and stopwatches."
+      - "Developed React-based applications including timers and productivity tools."
 
 education:
   - institution: "Monash University"
     degree: "Masters of Business Information Systems"
     duration: "Current"
     location: "Melbourne, VIC"
+
   - institution: "Fr. Conceicao Rodrigues College of Engineering"
     degree: "Bachelors of Engineering: Electronics and Computer Science"
     duration: "2018 – 2022"
     location: "Mumbai, India"
     details: "CGPA: 8.76"
+
   - institution: "Sandip Global School and Junior College"
     degree: "HSC Class 12th"
     duration: "2016 – 2018"
@@ -105,56 +114,52 @@ education:
     details: "Aggregate: 72.77%"
 
 skills:
-  - name: "Java"
-    iconType: "FaJava"
-    lib: "fa"
-    color: "#ED8B00"
   - name: "Python"
     iconType: "SiPython"
     lib: "si"
     color: "#3776AB"
-  - name: "TypeScript"
-    iconType: "SiTypescript"
-    lib: "si"
-    color: "#3178C6"
-  - name: "React"
-    iconType: "SiReact"
-    lib: "si"
-    color: "#61DAFB"
-  - name: "Node JS"
-    iconType: "SiNodedotjs"
-    lib: "si"
-    color: "#339933"
-  - name: "Express"
-    iconType: "SiExpress"
-    lib: "si"
-    color: "#FFFFFF"
-  - name: "MySQL"
+
+  - name: "SQL"
     iconType: "SiMysql"
     lib: "si"
     color: "#4479A1"
-  - name: "PostgreSQL"
-    iconType: "SiPostgresql"
-    lib: "si"
-    color: "#4169E1"
-  - name: "MongoDB"
-    iconType: "SiMongodb"
-    lib: "si"
-    color: "#47A248"
-  - name: "Solidity"
-    iconType: "SiSolidity"
-    lib: "si"
-    color: "#363636"
-  - name: "Git"
-    iconType: "SiGit"
-    lib: "si"
-    color: "#F05032"
-  - name: "Docker"
-    iconType: "SiDocker"
-    lib: "si"
-    color: "#2496ED"
+
   - name: "Tableau"
     iconType: "IoLogoTableau"
     lib: "io5"
     color: "#E97628"
----
+
+  - name: "Power BI"
+    iconType: "SiPowerbi"
+    lib: "si"
+    color: "#F2C811"
+
+  - name: "D3.js"
+    iconType: "SiD3Dotjs"
+    lib: "si"
+    color: "#F9A03C"
+
+  - name: "Excel"
+    iconType: "SiMicrosoftexcel"
+    lib: "si"
+    color: "#217346"
+
+  - name: "Python (Pandas, NumPy)"
+    iconType: "SiPython"
+    lib: "si"
+    color: "#3776AB"
+
+  - name: "Git"
+    iconType: "SiGit"
+    lib: "si"
+    color: "#F05032"
+
+  - name: "Docker"
+    iconType: "SiDocker"
+    lib: "si"
+    color: "#2496ED"
+
+  - name: "Java"
+    iconType: "FaJava"
+    lib: "fa"
+    color: "#ED8B00"
