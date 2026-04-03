@@ -3,12 +3,13 @@ import { useRef } from "react";
 import type { SiteData } from "@/lib/content";
 
 interface HeroSectionProps {
+  id?: string;
   foregroundColor: string;
   isDark: boolean;
   data: SiteData["hero"];
 }
 
-const HeroSection = ({ foregroundColor, isDark, data }: HeroSectionProps) => {
+const HeroSection = ({ id, foregroundColor, isDark, data }: HeroSectionProps) => {
   const ref = useRef<HTMLDivElement>(null);
   const { scrollYProgress } = useScroll({
     target: ref,
@@ -21,7 +22,7 @@ const HeroSection = ({ foregroundColor, isDark, data }: HeroSectionProps) => {
   const opacity = useTransform(scrollYProgress, [0, 0.6], [1, 0]);
 
   return (
-    <section ref={ref} className="relative h-[100vh] overflow-hidden">
+    <section id={id} ref={ref} className="relative h-[100vh] overflow-hidden">
       <div className="max-w-7xl mx-auto px-6 md:px-10 h-full flex flex-col items-center justify-between pt-[12vh] pb-[8vh] text-center">
         <div className="flex flex-col items-center">
           <motion.div
