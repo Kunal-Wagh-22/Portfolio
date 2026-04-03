@@ -6,6 +6,7 @@ import WorkSection from "@/components/WorkSection";
 import StackSection from "@/components/StackSection";
 import EducationSection from "@/components/EducationSection";
 import ApproachSection from "@/components/ApproachSection";
+import ContactSection from "@/components/ContactSection";
 import AnimatedChart from "@/components/AnimatedChart";
 import { useLenis } from "@/hooks/useLenis";
 import { useScrollGradient } from "@/hooks/use-scroll-gradient";
@@ -118,6 +119,10 @@ const Index = () => {
 
         </div>
 
+        <ContactSection 
+          foregroundColor={fg} 
+          mutedColor={muted}
+        />
 
       </div>
     </div>
