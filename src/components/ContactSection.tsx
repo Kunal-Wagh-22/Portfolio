@@ -17,13 +17,13 @@ const ContactSection = ({ foregroundColor, mutedColor }: ContactSectionProps) =>
         </p>
 
         <div className="flex flex-col md:flex-row justify-center gap-6 text-base">
-          <a href="mailto:hello@kunalwagh.com" className="underline" style={linkStyle}>
-            Email: hello@kunalwagh.com
+          <a href="mailto:waghkunal314@gmail.com" className="underline" style={linkStyle}>
+            Email:  waghkunal314@gmail.com
           </a>
-          <a href="https://www.linkedin.com/in/kunal-wagh" target="_blank" rel="noopener noreferrer" className="underline" style={linkStyle}>
+          <a href="https://www.linkedin.com/in/kunal-wagh-a45513208/" target="_blank" rel="noopener noreferrer" className="underline" style={linkStyle}>
             LinkedIn
           </a>
-          <a href="https://github.com/kunalwagh" target="_blank" rel="noopener noreferrer" className="underline" style={linkStyle}>
+          <a href="https://github.com/Kunal-Wagh-22" target="_blank" rel="noopener noreferrer" className="underline" style={linkStyle}>
             GitHub
           </a>
         </div>
