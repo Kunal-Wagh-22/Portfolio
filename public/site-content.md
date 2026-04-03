@@ -6,7 +6,7 @@ hero:
   location: "Monash University / Melbourne"
   resumeUrl: "/Kunal Resume (1).pdf"
   status: "Currently @ Monash University / Melbourne"
-  statement: "I bridge the gap between technical complexity and business intelligence — leveraging analytical precision and full-stack development to build impactful systems."
+  statement: "Master of Business Information Systems student at Monash University with hands-on experience in data analysis, dashboard development, and business analysis techniques. Proficient in SQL, Python, Tableau, Power BI, and D3.js, with practical experience working on multi-source datasets and creating clear, insightful visualisations. Skilled in requirement gathering, process modelling, and developing project management artefacts such as Gantt charts and Scrum boards. Seeking Business Analyst or Data Analyst roles to apply strong analytical thinking, problem-solving abilities, and a solid technical foundation to support effective, data-driven decision-making."
   tags:
     - label: "Architecture"
       val: "Scalable"
@@ -17,9 +17,13 @@ hero:
 
 approach:
   headline: "Analytical by nature, builder by design."
-  body: "Currently pursuing my Masters at Monash University, I focus on bridging the gap between data-driven decision making and full-stack engineering. Whether it's detecting hateful memes with BERT or architecting secure storage systems, I build for impact."
+  body: "Currently pursuing my Master's at Monash University, I focus on bridging the gap between data-driven decision making and full-stack engineering. Whether it's detecting hateful memes with BERT or architecting secure storage systems, I build for impact."
 
 projects:
+  - title: "IPL Match Dynamics Dashboard"
+    description: "•	Analysed 278K+ deliveries & 1,100+ matches to identify trends in toss decisions, scoring phases, and venue performance. Built an interactive D3.js dashboard with dynamic filters enabling real-time exploratory analysis. Identified that the toss advantage is venue-dependent, enabling more effective strategic planning. Provided insights on phase-wise performance contributing to winning outcomes."
+    tags: ["D3.js", "Data Visualization", "Data Exploration", "Python"]
+    image: "https://images.unsplash.com/photo-1558494949-ef010cbdcc51?auto=format&fit=crop&q=80&w=800"
   - title: "CypherLock: Secure File Storage"
     description: "Built a secure backend with Spring Boot, implementing file encryption, conversion functionality, and Rock You-based password breach detection."
     tags: ["Java", "Spring Boot", "Security", "Encryption"]
@@ -43,26 +47,27 @@ experience:
     duration: "Feb 2026 - Present"
     location: "Melbourne, VIC"
     description:
-      - "Provided academic and technical support to students of the IT Department"
-      - "Conducted mentoring sessions to clarify academic and technical doubts"
-      
-    
+      - "Mentored undergraduate and postgraduate students on IT concepts, academic challenges, and university systems, improving student engagement and learning outcomes.
+      - "Conducted one-on-one and group mentoring sessions to support problem-solving, assignments, and coursework challenges."
+      - "Provided guidance on digital tools and learning platforms to enhance student productivity and engagement."
+      - "Provided guidance on digital tools and learning platforms to enhance student productivity and engagement."
   - company: "NullClass"
     role: "Data Analyst"
     duration: "Nov 2024 – Jan 2025"
     location: "Remote"
     description:
-      - "Utilized Python (pandas, NumPy) for data cleaning and preprocessing on large datasets."
-      - "Developed interactive dashboards in Tableau to identify key trends and insights."
-      - "Hands-on experience with ETL processes and visual storytelling techniques."
+      - "Utilized Python (pandas, NumPy) to perform data cleaning, transformation, and preprocessing on large datasets to ensure data quality and consistency."
+      - "Developed interactive dashboards and visualizations in Tableau to identify key trends and insights."
+      - "Gained hands-on experience with data pipelines, ETL processes, and visual storytelling techniques."
   - company: "Team Vaayushastra"
     role: "GUI Team Member"
     duration: "June 2021 – May 2022"
     location: "Mumbai, India"
     description:
-      - "Developed the team website and engineered a user-friendly GUI for RC planes using PyQt5."
-      - "Created advanced visualization tools to analyze and enhance plane performance."
-      - "Implemented OpenCV for autonomous landing control systems."
+      - "Developed the team website for Team Vaayushastra."
+      - "Engineered a user-friendly GUI for an RC plane utilizing PyQt5 in Python."
+      - "Developed advanced visualization tools to analyse and enhance plane performance."
+      - "Contributed to the creation of an autonomous control system, implementing OpenCV for automated landing."
   - company: "Spark Foundation"
     role: "Web Development Intern"
     duration: "July 2022 – Aug 2022"
@@ -92,7 +97,7 @@ education:
     degree: "Bachelors of Engineering: Electronics and Computer Science"
     duration: "2018 – 2022"
     location: "Mumbai, India"
-    details: "CGPA: 8.91"
+    details: "CGPA: 8.76"
   - institution: "Sandip Global School and Junior College"
     degree: "HSC Class 12th"
     duration: "2016 – 2018"
