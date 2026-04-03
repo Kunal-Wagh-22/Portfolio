@@ -79,13 +79,14 @@ const ProjectCard = ({ title, description, tags, image, index, foregroundColor, 
 };
 
 interface WorkSectionProps {
+  id?: string;
   foregroundColor: string;
   mutedColor: string;
   foregroundRaw: string;
   data: SiteData["projects"];
 }
 
-const WorkSection = ({ foregroundColor, mutedColor, foregroundRaw, data }: WorkSectionProps) => {
+const WorkSection = ({ id, foregroundColor, mutedColor, foregroundRaw, data }: WorkSectionProps) => {
   const ref = useRef<HTMLDivElement>(null);
   const { scrollYProgress } = useScroll({
     target: ref,
@@ -97,7 +98,7 @@ const WorkSection = ({ foregroundColor, mutedColor, foregroundRaw, data }: WorkS
   const yHeader = useTransform(scrollYProgress, [0, 1], [40, -40]);
 
   return (
-    <section ref={ref} id="work" className="py-[15vh]">
+    <section ref={ref} id={id} className="py-[15vh]">
       <div className="max-w-7xl mx-auto px-6 md:px-10">
         <motion.div
           style={{ y: yHeader }}
