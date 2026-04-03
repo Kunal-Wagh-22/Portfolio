@@ -51,7 +51,7 @@ const Index = () => {
             count={20}
             className="absolute top-[12%] right-[10%] w-[30%] h-[15%] opacity-40 pointer-events-none" 
           />
-          <HeroSection foregroundColor={fg} isDark={isDark} data={siteData.hero} />
+          <HeroSection id="home" foregroundColor={fg} isDark={isDark} data={siteData.hero} />
         </div>
 
 
@@ -66,6 +66,7 @@ const Index = () => {
         </div>
 
         <ExperienceSection 
+          id="experience"
           foregroundColor={fg} 
           mutedColor={muted} 
           foregroundRaw={fgRaw}
@@ -74,6 +75,7 @@ const Index = () => {
 
 
         <WorkSection 
+          id="work"
           foregroundColor={fg} 
           mutedColor={muted} 
           foregroundRaw={fgRaw}
@@ -87,13 +89,14 @@ const Index = () => {
             className="absolute top-[20%] left-[10%] w-[25%] h-[20%] opacity-70 pointer-events-none" 
           />
           <StackSection 
+            id="stack"
             foregroundColor={fg} 
-            mutedColor={muted} 
             foregroundRaw={fgRaw}
             data={siteData.skills}
           />
         </div>
         <EducationSection 
+          id="education"
           foregroundColor={fg} 
           mutedColor={muted} 
           foregroundRaw={fgRaw}
@@ -107,6 +110,7 @@ const Index = () => {
             className="absolute bottom-[20%] right-[10%] w-[40%] h-[15%] opacity-70 pointer-events-none" 
           />
           <ApproachSection 
+            id="approach"
             foregroundColor={fg} 
             mutedColor={muted} 
             data={siteData.approach}
