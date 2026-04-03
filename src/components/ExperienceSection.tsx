@@ -3,13 +3,14 @@ import { useRef } from "react";
 import type { SiteData } from "@/lib/content";
 
 interface ExperienceSectionProps {
+  id?: string;
   foregroundColor: string;
   mutedColor: string;
   foregroundRaw: string;
   data: SiteData["experience"];
 }
 
-const ExperienceSection = ({ foregroundColor, mutedColor, foregroundRaw, data }: ExperienceSectionProps) => {
+const ExperienceSection = ({ id, foregroundColor, mutedColor, foregroundRaw, data }: ExperienceSectionProps) => {
   const ref = useRef<HTMLDivElement>(null);
   const { scrollYProgress } = useScroll({
     target: ref,
@@ -21,7 +22,7 @@ const ExperienceSection = ({ foregroundColor, mutedColor, foregroundRaw, data }:
   const yHeader = useTransform(scrollYProgress, [0, 1], [40, -40]);
 
   return (
-    <section ref={ref} id="experience" className="py-[10vh]">
+    <section ref={ref} id={id} className="py-[10vh]">
       <div className="max-w-7xl mx-auto px-6 md:px-10">
         <motion.div
           style={{ y: yHeader }}
