@@ -1,8 +1,7 @@
 import { motion } from "framer-motion";
 import { ThemeToggle } from "./ThemeToggle";
 
-const navItems = ["Work", "About", "Stack"];
-const navItemsSecondary = ["GitHub", "Contact"];
+const navItems = ["Work", "Experience", "Education", "Approach"];
 
 interface NavbarProps {
   foregroundColor: string;
@@ -25,20 +24,6 @@ const Navbar = ({ foregroundColor }: NavbarProps) => {
       </a>
       <div className="hidden md:flex items-center gap-8">
         {navItems.map((item) => (
-          <a
-            key={item}
-            href={`#${item.toLowerCase()}`}
-            className="font-sans-body text-[14px] transition-colors duration-500"
-            style={{ color: foregroundColor, opacity: 0.8 }}
-          >
-            {item}
-          </a>
-        ))}
-        <span
-          className="w-6 h-[1px] transition-colors duration-500"
-          style={{ backgroundColor: foregroundColor, opacity: 0.4 }}
-        />
-        {navItemsSecondary.map((item) => (
           <a
             key={item}
             href={`#${item.toLowerCase()}`}
