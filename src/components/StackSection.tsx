@@ -36,8 +36,8 @@ const iconMap: Record<string, any> = {
 };
 
 interface StackSectionProps {
+  id?: string;
   foregroundColor: string;
-  mutedColor: string;
   foregroundRaw: string;
   data: SiteData["skills"];
 }
@@ -122,7 +122,7 @@ const IconStage = ({
   );
 };
 
-const StackSection = ({ foregroundColor, foregroundRaw, data }: StackSectionProps) => {
+const StackSection = ({ id, foregroundColor, foregroundRaw, data }: StackSectionProps) => {
   const sectionRef = useRef<HTMLDivElement>(null);
   
   const { scrollYProgress } = useScroll({
@@ -139,7 +139,7 @@ const StackSection = ({ foregroundColor, foregroundRaw, data }: StackSectionProp
   const skillCenterIndex = Math.floor(skillData.length / 2);
 
   return (
-    <div ref={sectionRef} className="relative h-[250vh]">
+    <div id={id} ref={sectionRef} className="relative h-[250vh]">
       <div className="sticky top-0 h-screen w-full flex flex-col items-center justify-start overflow-hidden pt-[15vh]">
         
         {/* Stage 1: Text Fan Out */}
