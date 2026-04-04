@@ -50,8 +50,7 @@ const ExperienceSection = ({ id, foregroundColor, mutedColor, foregroundRaw, dat
               transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1], delay: i * 0.1 }}
               className="grid grid-cols-1 md:grid-cols-[250px_1fr] gap-12 p-8 md:p-12 transition-all duration-500 rounded-2xl relative mb-8 hover:bg-white/5"
               style={{ 
-                border: `1px solid hsl(${foregroundRaw} / 0.1)`,
-                backgroundColor: `hsl(${foregroundRaw} / 0.05)`,
+          
                 backdropFilter: "blur(10px)"
               }}
             >
