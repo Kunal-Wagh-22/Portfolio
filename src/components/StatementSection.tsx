@@ -5,11 +5,10 @@ import type { SiteData } from "@/lib/content";
 
 interface StatementSectionProps {
   foregroundColor: string;
-  mutedColor: string;
   data: SiteData["hero"];
 }
 
-const StatementSection = ({ foregroundColor, mutedColor, data }: StatementSectionProps) => {
+const StatementSection = ({ foregroundColor, data }: StatementSectionProps) => {
   const ref = useRef<HTMLDivElement>(null);
   const { scrollYProgress } = useScroll({
     target: ref,
