@@ -23,7 +23,7 @@ const Index = () => {
   });
 
   const { 
-    bgGradient, 
+
     foregroundColor: fg, 
     mutedColor: muted,
     foregroundRaw: fgRaw,
@@ -39,7 +39,7 @@ const Index = () => {
   return (
     <div
       className="relative min-h-screen transition-colors duration-1000 ease-in-out"
-      style={{ backgroundImage: bgGradient }}
+
     >
       <MISBackground foregroundColor={fg} />
       <div className="relative z-[2]">
