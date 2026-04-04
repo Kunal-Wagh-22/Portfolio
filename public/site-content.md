@@ -5,7 +5,8 @@ hero:
   location: "Monash University / Melbourne"
   resumeUrl: "/Kunal Resume (1).pdf"
   status: "Currently @ Monash University / Melbourne"
-  statement: "Master of Business Information Systems student at Monash University with hands-on experience in data analysis, dashboard development, and business analysis techniques. Proficient in SQL, Python, Tableau, Power BI, and D3.js, with practical experience working on multi-source datasets and creating clear, insightful visualisations. Skilled in requirement gathering, process modelling, and developing project management artefacts such as Gantt charts and Scrum boards. Seeking Business Analyst or Data Analyst roles to apply strong analytical thinking, problem-solving abilities, and a solid technical foundation to support effective, data-driven decision-making."
+  statement: "Master of Business Information Systems student at Monash University with experience in data analysis, dashboard development, and business analysis. Skilled in SQL, Python, Tableau, Power BI, and D3.js, with hands-on experience working with multi-source datasets and building insightful visualisations. Strong in requirement gathering, process modelling, and project management artefacts. Seeking Business Analyst or Data Analyst roles to apply analytical and problem-solving skills for data-driven decision-making.
+"
   tags:
     - label: "Architecture"
       val: "Scalable"
