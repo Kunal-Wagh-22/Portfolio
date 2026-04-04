@@ -3,7 +3,7 @@ hero:
   lastName: "Wagh"
   role: "Business Information Systems — Data Analyst & Business Analyst"
   location: "Monash University / Melbourne"
-  resumeUrl: "/Kunal Resume (1).pdf"
+  resumeUrl: "/Kunal_Resume.pdf"
   status: "Currently @ Monash University / Melbourne"
   statement: "Master of Business Information Systems student at Monash University with experience in data analysis, dashboard development, and business analysis. Skilled in SQL, Python, Tableau, Power BI, and D3.js, with hands-on experience working with multi-source datasets and building insightful visualisations. Strong in requirement gathering, process modelling, and project management artefacts. Seeking Business Analyst or Data Analyst roles to apply analytical and problem-solving skills for data-driven decision-making.
 "
