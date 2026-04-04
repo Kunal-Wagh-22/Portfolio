@@ -6,11 +6,10 @@ interface ExperienceSectionProps {
   id?: string;
   foregroundColor: string;
   mutedColor: string;
-  foregroundRaw: string;
   data: SiteData["experience"];
 }
 
-const ExperienceSection = ({ id, foregroundColor, mutedColor, foregroundRaw, data }: ExperienceSectionProps) => {
+const ExperienceSection = ({ id, foregroundColor, mutedColor, data }: ExperienceSectionProps) => {
   const ref = useRef<HTMLDivElement>(null);
   const { scrollYProgress } = useScroll({
     target: ref,
