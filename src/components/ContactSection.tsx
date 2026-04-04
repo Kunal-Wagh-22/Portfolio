@@ -1,9 +1,8 @@
 interface ContactSectionProps {
   foregroundColor: string;
-  mutedColor: string;
 }
 
-const ContactSection = ({ foregroundColor, mutedColor }: ContactSectionProps) => {
+const ContactSection = ({ foregroundColor }: ContactSectionProps) => {
   const linkStyle = { color: foregroundColor };
 
   return (
