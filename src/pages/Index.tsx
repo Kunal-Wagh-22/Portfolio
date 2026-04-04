@@ -63,14 +63,13 @@ const Index = () => {
             foregroundColor={fg} 
             className="absolute bottom-[20%] right-[10%] w-[25%] h-[40px] opacity-40 pointer-events-none" 
           />
-          <StatementSection foregroundColor={fg} mutedColor={muted} data={siteData.hero} />
+          <StatementSection foregroundColor={fg} data={siteData.hero} />
         </div>
 
         <ExperienceSection 
           id="experience"
           foregroundColor={fg} 
           mutedColor={muted} 
-          foregroundRaw={fgRaw}
           data={siteData.experience}
         />
 
@@ -113,7 +112,6 @@ const Index = () => {
           <ApproachSection 
             id="approach"
             foregroundColor={fg} 
-            mutedColor={muted} 
             data={siteData.approach}
           />
 
@@ -121,7 +119,6 @@ const Index = () => {
 
         <ContactSection 
           foregroundColor={fg} 
-          mutedColor={muted}
         />
 
       </div>
