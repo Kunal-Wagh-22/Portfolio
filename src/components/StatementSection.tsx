@@ -1,7 +1,7 @@
 import { motion, useScroll, useTransform } from "framer-motion";
 import { useRef } from "react";
 import type { SiteData } from "@/lib/content";
-import ScrollHighlightText from "./ScrollHighlightText";
+
 
 interface StatementSectionProps {
   foregroundColor: string;
@@ -31,14 +31,9 @@ const StatementSection = ({ foregroundColor, mutedColor, data }: StatementSectio
           viewport={{ once: true, margin: "-100px" }}
           transition={{ duration: 1, ease: [0.22, 1, 0.36, 1] }}
         >
-          <ScrollHighlightText
-            className="text-display max-w-[1100px]"
-            activeColor={foregroundColor}
-            inactiveColor={mutedColor}
-            as="h2"
-          >
+       
             {hero.statement}
-          </ScrollHighlightText>
+       
         </motion.div>
 
         <motion.div
