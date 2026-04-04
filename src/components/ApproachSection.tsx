@@ -1,7 +1,6 @@
 import { motion, useScroll, useTransform } from "framer-motion";
 import { useRef } from "react";
 import type { SiteData } from "@/lib/content";
-import ScrollHighlightText from "./ScrollHighlightText";
 
 interface ApproachSectionProps {
   id?: string;
@@ -11,7 +10,6 @@ interface ApproachSectionProps {
 }
 
 const ApproachSection = ({ id, foregroundColor, mutedColor, data }: ApproachSectionProps) => {
-
   const ref = useRef<HTMLDivElement>(null);
 
   const { scrollYProgress } = useScroll({
@@ -28,23 +26,20 @@ const ApproachSection = ({ id, foregroundColor, mutedColor, data }: ApproachSect
   return (
     <section ref={ref} id={id} className="relative py-[25vh] overflow-hidden">
       <div className="max-w-7xl mx-auto px-6 md:px-10">
+        {/* HEADLINE (Hero Typography Applied) */}
         <motion.div
-          style={{ y: yHeadline }}
+          style={{ y: yHeadline ,color: foregroundColor}}
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           viewport={{ once: true, margin: "-100px" }}
           transition={{ duration: 1, ease: [0.22, 1, 0.36, 1] }}
+          className="font-serif-display text-[clamp(2.5rem,5vw,8rem)] font-bold tracking-tighter leading-[0.8]"
+         
         >
-          <ScrollHighlightText
-            className="text-display-sm max-w-[1100px]"
-            activeColor={foregroundColor}
-            inactiveColor={mutedColor}
-            as="h2"
-          >
-            {approach.headline}
-          </ScrollHighlightText>
+          {approach.headline}
         </motion.div>
 
+        {/* BODY (Hero Typography Applied) */}
         <motion.div
           style={{ y: yBody }}
           initial={{ opacity: 0 }}
@@ -53,16 +48,15 @@ const ApproachSection = ({ id, foregroundColor, mutedColor, data }: ApproachSect
           transition={{ duration: 1, ease: [0.22, 1, 0.36, 1], delay: 0.15 }}
           className="mt-4"
         >
-          <ScrollHighlightText
-            className="text-display-sm max-w-[1100px]"
-            activeColor={foregroundColor}
-            inactiveColor={mutedColor}
-            as="p"
+          <p
+            className="text-[clamp(14px,2vw,18px)]"
+            style={{ color: foregroundColor, opacity: 0.6 }}
           >
             {approach.body}
-          </ScrollHighlightText>
+          </p>
         </motion.div>
 
+        {/* BUTTON (unchanged) */}
         <motion.div
           style={{ y: yButton }}
           initial={{ opacity: 0 }}
@@ -91,4 +85,3 @@ const ApproachSection = ({ id, foregroundColor, mutedColor, data }: ApproachSect
 };
 
 export default ApproachSection;
-
