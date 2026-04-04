@@ -5,11 +5,10 @@ import type { SiteData } from "@/lib/content";
 interface ApproachSectionProps {
   id?: string;
   foregroundColor: string;
-  mutedColor: string;
   data: SiteData["approach"];
 }
 
-const ApproachSection = ({ id, foregroundColor, mutedColor, data }: ApproachSectionProps) => {
+const ApproachSection = ({ id, foregroundColor, data }: ApproachSectionProps) => {
   const ref = useRef<HTMLDivElement>(null);
 
   const { scrollYProgress } = useScroll({
