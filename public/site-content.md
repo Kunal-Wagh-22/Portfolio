@@ -23,27 +23,27 @@ projects:
   - title: "IPL Match Dynamics Dashboard"
     description: "Analysed 278K+ deliveries & 1,100+ matches to identify trends in toss decisions, scoring phases, and venue performance. Built an interactive D3.js dashboard with dynamic filters enabling real-time exploratory analysis. Identified venue-dependent toss advantages and generated phase-wise performance insights influencing match outcomes."
     tags: ["D3.js", "Data Visualization", "Data Analysis", "Python"]
-    image: "https://images.unsplash.com/photo-1558494949-ef010cbdcc51?auto=format&fit=crop&q=80&w=800"
+    image: "/images/IPL.png"
+    link: "https://ipldataanalytics.vercel.app/"
 
-  - title: "CypherLock: Secure File Storage"
-    description: "Developed a secure backend using Spring Boot with file encryption, secure storage, and password breach detection based on the RockYou dataset, enhancing system security and reliability."
-    tags: ["Java", "Spring Boot", "Security", "Encryption"]
-    image: "https://images.unsplash.com/photo-1558494949-ef010cbdcc51?auto=format&fit=crop&q=80&w=800"
 
   - title: "Blockchain Movie Distribution"
     description: "Built a decentralized movie distribution platform using Ethereum and IPFS, with Thirdweb deployment and OTP-based authentication for secure and transparent content access."
     tags: ["Ethereum", "React", "IPFS", "Blockchain"]
     image: "https://images.unsplash.com/photo-1639762681485-074b7f938ba0?auto=format&fit=crop&q=80&w=800"
+    link: "YOUR_URL_HERE"
 
   - title: "Hateful Meme Detection"
     description: "Developed a deep learning pipeline combining Detectron2 and BERT with knowledge graphs to classify harmful content in memes, improving detection accuracy and contextual understanding."
     tags: ["Python", "BERT", "Deep Learning", "Computer Vision"]
     image: "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&q=80&w=800"
+    link: "https://github.com/Kunal-Wagh-22?tab=repositories"
 
   - title: "Auto-Landing RC Plane GUI"
     description: "Engineered a Python-based GUI for real-time telemetry and performance monitoring of an RC plane, contributing to an OpenCV-powered autonomous landing system."
     tags: ["Python", "PyQt5", "OpenCV", "IoT"]
     image: "https://images.unsplash.com/photo-1508614589041-895b88991e3e?auto=format&fit=crop&q=80&w=800"
+    link: "YOUR_URL_HERE"
 
 experience:
   - company: "Monash University"

@@ -7,13 +7,14 @@ interface ProjectCardProps {
   description: string;
   tags: string[];
   image: string;
+  link?: string;
   index: number;
   foregroundColor: string;
   mutedColor: string;
   foregroundRaw: string;
 }
 
-const ProjectCard = ({ title, description, tags, image, index, foregroundColor, mutedColor, foregroundRaw }: ProjectCardProps) => {
+const ProjectCard = ({ title, description, tags, image, link, index, foregroundColor, mutedColor, foregroundRaw }: ProjectCardProps) => {
   const ref = useRef<HTMLDivElement>(null);
   const { scrollYProgress } = useScroll({
     target: ref,
@@ -62,6 +63,17 @@ const ProjectCard = ({ title, description, tags, image, index, foregroundColor, 
               </span>
             ))}
           </div>
+          {link && (
+            <a
+              href={link}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="mt-6 inline-flex items-center px-4 py-2 rounded-lg transition-colors duration-500 hover:bg-white/10"
+              style={{ color: foregroundColor, border: `1px solid hsl(${foregroundRaw} / 0.35)` }}
+            >
+              View Project →
+            </a>
+          )}
         </motion.div>
 
         <motion.div style={{ y: yImage }} className="relative overflow-hidden rounded-[2px]">
@@ -114,17 +126,7 @@ const WorkSection = ({ id, foregroundColor, mutedColor, foregroundRaw, data }: W
           >
             Selected projects
           </motion.h2>
-          <motion.a
-            href="#"
-            initial={{ opacity: 0 }}
-            whileInView={{ opacity: 1 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.8, delay: 0.2 }}
-            className="font-serif-display text-[clamp(1rem,2vw,1.5rem)] transition-colors duration-500 hidden md:block"
-            style={{ color: mutedColor }}
-          >
-            View all →
-          </motion.a>
+
         </motion.div>
 
         <div className="space-y-4">
