@@ -28,10 +28,10 @@ const ContactSection = ({ foregroundColor }: ContactSectionProps) => {
         {/* LINKS (unchanged) */}
         <div className="flex flex-col md:flex-row justify-center gap-6 text-base">
           <a href="mailto:hello@kunalwagh.com" className="underline" style={linkStyle}>
-            Email: hello@kunalwagh.com
+            Email: waghkunal314@gmail.com
           </a>
           <a
-            href="https://www.linkedin.com/in/kunal-wagh"
+            href="https://www.linkedin.com/in/kunal-wagh-a45513208/"
             target="_blank"
             rel="noopener noreferrer"
             className="underline"
@@ -40,7 +40,7 @@ const ContactSection = ({ foregroundColor }: ContactSectionProps) => {
             LinkedIn
           </a>
           <a
-            href="https://github.com/kunalwagh"
+            href="https://github.com/Kunal-Wagh-22"
             target="_blank"
             rel="noopener noreferrer"
             className="underline"
