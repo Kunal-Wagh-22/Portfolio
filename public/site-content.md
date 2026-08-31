@@ -26,24 +26,17 @@ projects:
     image: "/images/IPL.png"
     link: "https://ipldataanalytics.vercel.app/"
 
-
-  - title: "Blockchain Movie Distribution"
-    description: "Built a decentralized movie distribution platform using Ethereum and IPFS, with Thirdweb deployment and OTP-based authentication for secure and transparent content access."
-    tags: ["Ethereum", "React", "IPFS", "Blockchain"]
+  - title: "Kissan Mart"
+    description: "Built a permissioned blockchain network on Hyperledger Fabric modeling a 4-party agricultural supply chain (Farmers, APMC, Companies, Government), with Go smart contracts automating produce registration, quality certification, and sale."
+    tags: ["Hyperledger Fabric", "Go", "Docker", "Blockchain"]
     image: "https://images.unsplash.com/photo-1639762681485-074b7f938ba0?auto=format&fit=crop&q=80&w=800"
-    link: "YOUR_URL_HERE"
+    link: "https://github.com/davidjennicson/KissanMart"
 
   - title: "Hateful Meme Detection"
     description: "Developed a deep learning pipeline combining Detectron2 and BERT with knowledge graphs to classify harmful content in memes, improving detection accuracy and contextual understanding."
     tags: ["Python", "BERT", "Deep Learning", "Computer Vision"]
     image: "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&q=80&w=800"
-    link: "https://github.com/Kunal-Wagh-22?tab=repositories"
-
-  - title: "Auto-Landing RC Plane GUI"
-    description: "Engineered a Python-based GUI for real-time telemetry and performance monitoring of an RC plane, contributing to an OpenCV-powered autonomous landing system."
-    tags: ["Python", "PyQt5", "OpenCV", "IoT"]
-    image: "https://images.unsplash.com/photo-1508614589041-895b88991e3e?auto=format&fit=crop&q=80&w=800"
-    link: "YOUR_URL_HERE"
+    link: "https://github.com/Kunal-Wagh-22/Hatefull-Meme-Detection"
 
 experience:
   - company: "Monash University"
