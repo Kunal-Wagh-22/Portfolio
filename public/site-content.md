@@ -20,6 +20,12 @@ approach:
   body: "Currently pursuing my Master's at Monash University, I focus on bridging the gap between data-driven decision making and business problem solving. I build analytical solutions that translate data into actionable insights and real-world impact."
 
 projects:
+  - title: "SafeLane Twin"
+    description: "Team project (Monash FIT5120): a pre-ride assistant for bicycle delivery riders on Melbourne's Chapel Street, with an interactive map of crash and dooring history, parking, tram tracks and expected traffic by departure time. As business analyst and data team member, I shaped requirements and acceptance criteria, confirmed data sources and reporting periods, and worked on the PostgreSQL/PostGIS data layer behind the FastAPI backend."
+    tags: ["Business Analysis", "PostgreSQL / PostGIS", "Data Analysis", "Vue", "MapLibre"]
+    image: "/images/safelane-twin.jpg"
+    link: "https://www.safelanetwin.tech/"
+
   - title: "IPL Match Dynamics Dashboard"
     description: "Analysed 278K+ deliveries & 1,100+ matches to identify trends in toss decisions, scoring phases, and venue performance. Built an interactive D3.js dashboard with dynamic filters enabling real-time exploratory analysis. Identified venue-dependent toss advantages and generated phase-wise performance insights influencing match outcomes."
     tags: ["D3.js", "Data Visualization", "Data Analysis", "Python"]
