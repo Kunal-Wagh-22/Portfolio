@@ -22,7 +22,7 @@ approach:
 projects:
   - title: "SafeLane Twin"
     description: "Team project (Monash FIT5120): a pre-ride assistant for bicycle delivery riders on Melbourne's Chapel Street, with an interactive map of crash and dooring history, parking, tram tracks and expected traffic by departure time. As business analyst and data team member, I shaped requirements and acceptance criteria and confirmed data sources and reporting periods."
-    tags: ["Business Analysis", "PostgreSQL / PostGIS", "Data Analysis", "Vue", "MapLibre"]
+    tags: ["Business Analysis", "Data Analysis", "Vue", "MapLibre"]
     image: "/images/safelane-twin.jpg"
     link: "https://www.safelanetwin.tech/"
 
